@@ -19,15 +19,11 @@ Projeyi yerel bilgisayarınızda çalıştırmak oldukça basittir:
 
 1. Bu depoyu bilgisayarınıza indirin (klonlayın):
    ```bash
-   git clone https://github.com
+   git clone (https://github.com/Bip-Kanal-Bulucu/)
    ```
 2. Proje klasörüne gidin.
 3. `index.html` dosyasına çift tıklayarak tarayıcınızda hemen çalıştırın!
 
 ## 📜 Lisans
 Bu proje **GNU General Public License v3.0 (GPL-3.0)** ile lisanslanmıştır. Detaylar için `LICENSE` dosyasına göz atabilirsiniz. Bu lisans uyarınca kodları alıp geliştirebilirsiniz, ancak yaptığınız geliştirmeleri de açık kaynak olarak paylaşmanız zorunludur.
-
-## 📺 YouTube Videosu
-Projenin nasıl çalıştığını ve kullanım detaylarını izlemek için YouTube videoma göz atabilirsiniz:
-👉 [Video Linkiniz Buraya]
 
