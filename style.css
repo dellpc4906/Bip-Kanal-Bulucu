@@ -1,0 +1,102 @@
+/* --- SIFIRLAMA VE EKRAN AYARLARI --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f172a;
+    overflow: hidden; /* Ana sayfanın taşmasını ve kaymasını engeller */
+}
+
+/* --- ÜST ARAMA BARTI --- */
+.top-bar {
+    background-color: #1e293b;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #334155;
+    flex-shrink: 0; /* Üst barın yüksekliğini sabit tutar, sıkıştırmaz */
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo span { color: #38bdf8; }
+
+.input-group {
+    display: flex;
+    width: 60%;
+    max-width: 650px;
+    background-color: #0f172a;
+    border-radius: 8px;
+    padding: 3px;
+    border: 1px solid #334155;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+    font-size: 15px;
+}
+
+#search-btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+#search-btn:hover { background-color: #0ea5e9; }
+
+/* --- CANLI SONUÇ EKRANI (%100 UYUMLU) --- */
+.view-container {
+    flex: 1; /* Kalan tüm dikey ekranı kaplar */
+    position: relative;
+    background-color: #ffffff;
+    min-height: 0; /* İçeriğin ekranı aşağı doğru patlatmasını önler */
+}
+
+#wiki-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: none; /* İlk başta gizli, arama yapınca görünecek */
+}
+
+/* Giriş ve Boş Durum Mesajı */
+.placeholder-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #64748b;
+    width: 90%;
+    max-width: 450px;
+}
+.placeholder-text h2 {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+.placeholder-text p {
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bip Kanal Bulucu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Üst Arama Barı (Ekrana Sabit) -->
+    <header class="top-bar">
+        <div class="logo">Bip<span>Kanal</span><span>Bulucu</span></div>
+        <div class="input-group">
+            <input type="text" id="search-input" placeholder="Bir kanal ismi girin" value="vpnucretsiz">
+            <button id="search-btn" type="button">Ara</button>
+        </div>
+    </header>
+
+    <!-- Sonuçları Canlı Gösteren Alt Ekran -->
+    <main class="view-container">
+        <iframe id="wiki-frame" src="about:blank"></iframe>
+        <div id="welcome-message" class="placeholder-text">
+            <h2>Sonuç Ekranı</h2>
+            <p>Yukarıya bir kelime yazıp "Ara" butonuna bastığınızda, ilgili bip sayfası doğrudan bu alanda açılacaktır.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
